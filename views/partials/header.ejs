@@ -11,6 +11,14 @@
   <nav>
     <a href="/cars/new">Add Car</a>&nbsp;&nbsp;|&nbsp;&nbsp;
     <a href="/cars">Home Page</a>
+
+    <img src="/images/camera.svg">
+    <% if (user) { %>
+      <a href="/logout">LOG OUT</a>
+    <% } else { %>
+      <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+    <% } %>
+  </nav>
   </nav>
 </body>
   </html>
