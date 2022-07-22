@@ -4,13 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
-var session = require('express-session');
 var passport = require('passport');
 const methodOverride = require('method-override');
 
 require('dotenv').config();
-require('./config/database');
-
 require('./config/database');
 require('./config/passport');
 
@@ -44,8 +41,10 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use(function(req, res, next) {
-  next(createError(404));
+  res.locals.user = req.user;
+  next();
 });
+
 
 
 app.use('/', indexRouter);
