@@ -144,3 +144,12 @@ h1 {
   -webkit-text-stroke: .25vmin rgb(104, 228, 218) ;
   text-align: center;
 }
+
+.cars {
+  display: inline-block;
+  justify-content: center;
+  align-items: right;
+  height: auto;
+  width: auto;
+  padding: 10px;
+}

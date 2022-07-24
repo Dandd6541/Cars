@@ -1,0 +1,30 @@
+<%- include('../partials/header') %>
+
+<h2>Enter a New Car</h2>
+<form action="/cars" method="POST">
+  <label>Make:
+    <select name="make">
+      <option value="Toyota">Toyota</option>
+      <option value="Honda">Honda</option>
+      <option value="Nissan">Nissan</option>
+      <option value="Acura">Acura</option>
+    </select>
+  </label><br>
+  <label>Model:
+    <select name="model">
+      <option value="Corolla" selected>Corolla</option>
+      <option value="Camary">Camary</option>
+      <option value="Rav4">Rav4</option>
+      <option value="Highlander">Highlander</option>
+    </select>
+  </label><br>
+  <label>Year:
+    <input type="Number" name="year">
+  </label><br>
+  <label>Availability:
+    <input type="datetime-local" name="availability">
+  </label><br>
+  <input type="submit" value="submit">
+</form>
+
+<%- include('../partials/footer') %>

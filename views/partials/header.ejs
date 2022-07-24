@@ -10,15 +10,14 @@
 <body>
   <nav>
 
-    <a href="/cars">Home Page</a>
+    <a href="/cars/Homepage">Home Page</a>
 
     <a href="/cars/new">Add Car</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
 
- <a href="/cars">Classic Cars</a>
+ <a href="/cars">Car List</a>
 
     <% if (user) { %>
       <a href="/logout" class="login">LOG OUT</a>
-      <a href="/cars/new">Add Car</a>&nbsp;&nbsp;|&nbsp;&nbsp; //edit
     <% } else { %>
       <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
     <% } %>
