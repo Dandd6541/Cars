@@ -149,7 +149,7 @@ h1 {
   display: inline-block;
   justify-content: center;
   align-items: right;
-  height: auto;
+  height: 500px;
   width: auto;
   padding: 10px;
 }

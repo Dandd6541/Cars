@@ -6,7 +6,7 @@ const Schema = mongoose.Schema;
 const carSchema = new Schema({
    make: {
        type: String,
-       enum: ['Toyota']
+       enum: ['Toyota', 'Honda', 'Nissan', 'Acura' ]
    },
    model: {
        type: String,

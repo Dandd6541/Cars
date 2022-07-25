@@ -1,4 +1,6 @@
 const Car = require('../models/cars');
+// const Arrival = require('../models/arrival');
+
 
 module.exports = {
   index,
