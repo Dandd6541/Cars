@@ -25,7 +25,7 @@ const reviewSchema = new Schema({
 const carSchema = new Schema({
    make: {
        type: String,
-       enum: ['Toyota', 'Honda', 'Nissan', 'Acura' ]
+       enum: ['Toyota']
    },
    model: {
        type: String,
