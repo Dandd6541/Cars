@@ -10,6 +10,7 @@ module.exports = {
 };
 function show(req, res) {
   Car.findById(req.params.id, function(err, car){
+    console.log(car)
       res.render('cars/show', {title: 'car Detail', car});
     
   });

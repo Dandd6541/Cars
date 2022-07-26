@@ -16,6 +16,9 @@ require('./config/passport');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var carsRouter = require('./routes/cars');
+var reviewsRouter = require('./routes/reviews');
+
+
 
 var app = express();
 
@@ -47,19 +50,20 @@ app.use(function(req, res, next) {
   next();
 });
 // Middleware will help to protect routes
+
 const isLoggedIn = require('./config/auth');
 
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/cars', carsRouter);
-
-// app.use('/', isLoggedIn, reviewsRouter);
+app.use('/reviews', isLoggedIn, reviewsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
+app.use('/', isLoggedIn, reviewsRouter);
 
 // error handler
 app.use(function(err, req, res, next) {
