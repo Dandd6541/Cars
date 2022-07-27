@@ -1,24 +1,15 @@
 <%- include('../partials/header') %>
+<h2>Edit</h2>
 
-<h1>edit</h1>
-
-%- include('../partials/header') %>
-<section id="show-page">
-    <div>Make/Model: </div>
-    <div><%= car.make %></div>
-    <div><%= car.model %></div>
-    <div>Release Year: </div>
-    <div><%= car.year %></div>
-    <div>Rating: </div>
-    <div><%= car.availability %></div>
 
 <% if (user) { %>
     <form id="add-review-form" method="POST"
-      action="/reviews/<%= car._id %>">
+      action="/cars/<%= car._id%>/reviews/<%= review %>">
       <label>Review:</label>
-      <textarea name="content"></textarea>
+      <textarea name="content" ><%= review.content %></textarea>
       <label>Rating:</label>
-      <select name="rating">
+      <h3> <%= review.content %></h3>
+      <select name="rating" value="<%= review.rating %>">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -28,5 +19,6 @@
       <input type="submit" value="Add Review">
     </form>
   <% } %>
+
 
 <%- include('../partials/footer') %> 

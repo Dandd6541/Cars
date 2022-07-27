@@ -1,4 +1,5 @@
 <%- include('../partials/header') %>
+
 <section id="show-page">
     <div>Make/Model: </div>
     <div><%= car.make %></div>
@@ -51,19 +52,20 @@
             <% if ( user?._id.equals(r.user) ) { %>
               <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
                 <button type="submit">X</button>
-
-                <form action="/reviews/edit/<%= r._id %>?_method=EDIT" method="PUT">
-                    <button type="submit">EDIT</button>
-                  </form>
            
               </form>
             <% } %>
           </td>
+
+          <td>
+            <% if ( user?._id.equals(r.user) ) { %>
+              <a href="/reviews/<%= r._id %>/edit">
+                <button type="submit">EDIT</button>
+           
+              </a>
+            <% } %>
+          </td>
         </tr>
-
-       
-            
-
         <% }); %>
         <tr>
           <td colspan="3"></td>
