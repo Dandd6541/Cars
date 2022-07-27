@@ -3,9 +3,9 @@ var router = express.Router();
 const carCtrl = require('../controllers/cars');
 const isLoggedIn = require('../config/auth');
 
-router.get('/', carCtrl.index);
+router.get('/', isLoggedIn, carCtrl.index);
 router.get('/new', isLoggedIn, carCtrl.new);
-router.get('/:id', carCtrl.show);
+router.get('/:id', isLoggedIn, carCtrl.show);
 router.post('/', isLoggedIn, carCtrl.create);
 
 
