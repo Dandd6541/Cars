@@ -51,16 +51,18 @@
             <% if ( user?._id.equals(r.user) ) { %>
               <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
                 <button type="submit">X</button>
+
+                <form action="/reviews/edit/<%= r._id %>?_method=EDIT" method="PUT">
+                    <button type="submit">EDIT</button>
+                  </form>
+           
               </form>
             <% } %>
           </td>
         </tr>
 
-        <% if ( user?._id.equals(r.user) ) { %>
-            <form action="/edit/<%= r._id %>?_method=EDIT" method="POST">
-              <button type="eit">EDIT</button>
-            </form>
-          <% } %>
+       
+            
 
         <% }); %>
         <tr>

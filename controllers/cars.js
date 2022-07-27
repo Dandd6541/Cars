@@ -34,10 +34,5 @@ function index(req, res) {
     res.render('cars/index', { cars });
   });
 }
-function edit(req, res) {
-  Car.findOne({_id: req.params.id, userRecommending: req.user._id}, function(err, car) {
-    if (err || !car) return res.redirect('/cars');
-    res.render('cars/edit', {car});
-  });
-}
+
 

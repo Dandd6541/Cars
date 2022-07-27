@@ -2,8 +2,33 @@ const Car = require('../models/cars');
 
 module.exports = {
   create,
-  delete: deleteReview
+  delete: deleteReview,
+  edit,
+  update
 };
+
+function update(req, res) {
+    Car.findOneAndUpdate(
+      {_id: req.params.id, userRecommending: req.user._id},
+      // update object with updated properties
+      req.body,
+      // options object with new: true to make sure updated doc is returned
+      {new: true},
+      function(err, car) {
+        if (err || !car) return res.redirect('/cars');
+        res.redirect(`/cars/${car._id}`);
+      }
+    );
+  }
+
+function edit(req, res) {
+    Car.findOne({_id: req.params.id, userRecommending: req.user._id}, function(err, car) {
+      if (err || !car) return res.redirect('/cars');
+      console.log(car)
+      res.render('cars/edit', {car});
+    });
+  }
+  
 
 async function deleteReview(req, res, next) {
   try {
@@ -38,3 +63,6 @@ function create(req, res) {
     });
   });
 }
+
+
+  

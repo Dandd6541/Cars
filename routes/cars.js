@@ -7,7 +7,7 @@ router.get('/', carCtrl.index);
 router.get('/new', isLoggedIn, carCtrl.new);
 router.get('/:id', carCtrl.show);
 router.post('/', isLoggedIn, carCtrl.create);
-router.get('/:id/edit', isLoggedIn, carCtrl.create);
+
 
 
 module.exports = router;
