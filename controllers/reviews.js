@@ -24,7 +24,7 @@ function edit(req, res) {
      let review = car.reviews.id(req.params.id)
      console.log(review)
       if (err || !car) return res.redirect('/cars');
-      res.render('cars/edit', {car, review});
+      res.render('reviews/edit', {car, review});
     });
   }
 
