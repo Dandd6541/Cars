@@ -15,7 +15,6 @@ function show(req, res) {
     
   });
 }
-
 function create(req, res) {
   const car = new Car(req.body);
   car.save(function(err) {

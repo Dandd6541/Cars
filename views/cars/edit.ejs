@@ -3,8 +3,11 @@
 
 
 <% if (user) { %>
-    <form id="add-review-form" method="POST"
-      action="/cars/<%= car._id%>/reviews/<%= review %>">
+
+  
+  <form id="add-review-form" method="POST"
+    action="/reviews/<%= review._id%>?_method=PUT"> 
+
       <label>Review:</label>
       <textarea name="content" ><%= review.content %></textarea>
       <label>Rating:</label>

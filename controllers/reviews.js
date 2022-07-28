@@ -7,6 +7,17 @@ module.exports = {
   update
 };
 
+function update(req, res) {
+  Car.findOne({'reviews._id': req.params.id}, function(err, car) {
+    const reviewSubdoc = car.reviews.id(req.params.id);
+    if (!reviewSubdoc.user.equals(req.user._id)) return res.redirect(`/cars/${car._id}`);
+    reviewSubdoc.content = req.body.content;
+    car.save(function(err) {
+      res.redirect(`/cars/${car._id}`)
+    });
+  });
+}
+
 function edit(req, res) {
   console.log(req.params.id)
     Car.findOne({"reviews._id": req.params.id}, function(err, car) {
@@ -17,16 +28,7 @@ function edit(req, res) {
     });
   }
 
-function update(req, res) {
-    Car.findOne({'reviews._id': req.params.id}, function(err, car) {
-      const commentSubdoc = car.reviews.id(req.params.id);
-      if (!commentSubdoc.userId.equals(req.user._id)) return res.redirect(`/cars/${car._id}`);
-      commentSubdoc.content = req.body.content;
-      car.save(function(err) {
-        res.redirect(`/cars/${car._id}`);
-      });
-    });
-  }
+
 
 async function deleteReview(req, res, next) {
   try {
