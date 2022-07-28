@@ -1,13 +1,10 @@
 <%- include('../partials/header') %>
-<h2>Edit</h2>
 
-
+<h2>Edit Your Review</h2>
 <% if (user) { %>
-
-  
   <form id="add-review-form" method="POST"
     action="/reviews/<%= review._id%>?_method=PUT"> 
-
+      
       <label>Review:</label>
       <textarea name="content" ><%= review.content %></textarea>
       <label>Rating:</label>
@@ -21,6 +18,7 @@
       </select>
       <input type="submit" value="Update Review">
     </form>
+    
   <% } %>
 
 

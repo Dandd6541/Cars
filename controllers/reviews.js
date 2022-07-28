@@ -52,8 +52,6 @@ function create(req, res) {
 
     car.reviews.push(req.body);
     car.save(function(err) {
-      // Step 5: Data has been changed
-      // so we redirect
       res.redirect(`/cars/${car._id}`);
     });
   });
