@@ -1,0 +1,28 @@
+body {
+    background-color: silver;
+}
+
+#add-review-form {
+    padding-top: 10px;
+    padding-bottom: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+        font-size: 22px;
+        -webkit-text-stroke: .15vmin rgb(25, 191, 209) ;
+      }
+      .cars {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+        padding-top: 20px;
+      }
+    
+h2 {
+    margin-top: 5vmin;
+    font-size: 8vmin;
+    -webkit-text-stroke: .28vmin rgb(104, 228, 218) ;
+    text-align: center;
+  }

@@ -1,7 +1,13 @@
 <%- include('../partials/header') %>
 
-<h2>Enter a New Car</h2>
-<form action="/cars" method="POST">
+<link rel="stylesheet" href="/stylesheets/new.css">
+
+<h2>Enter a New Toyota</h2>
+
+<img src="https://cdn.pixabay.com/photo/2016/08/15/18/19/toyota-1596082_1280.png" class="cars">
+
+<form id="add-review"
+ action="/cars" method="POST">
   <label>Make:
     <select name="make">
       <option value="Toyota">Toyota</option>

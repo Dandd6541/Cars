@@ -138,22 +138,6 @@ hr {
   height: 30px;
 }
 
-h1 {
-  margin-top: 5vmin;
-  font-size: 4vmin;
-  -webkit-text-stroke: .25vmin rgb(104, 228, 218) ;
-  text-align: center;
-}
-
-.cars {
-  display: inline-block;
-  justify-content: center;
-  align-items: right;
-  height: 500px;
-  width: auto;
-  padding: 10px;
-} 
-
 
 #add-review-form {
   text-align: center;
