@@ -11,7 +11,7 @@
 
 <% if (user) { %>
     <form id="add-review-form" method="POST"
-      action="/reviews/<%= car._id %>">
+      action="/cars/<%= car._id %>/reviews">
       <label>Review:</label>
       <textarea name="content"></textarea>
       <label>Rating:</label>
@@ -60,7 +60,7 @@
           <td>
             <% if ( user?._id.equals(r.user) ) { %>
               <a href="/reviews/<%= r._id %>/edit">
-                <button type="submit">EDIT</button>
+                <button>EDIT</button>
            
               </a>
             <% } %>

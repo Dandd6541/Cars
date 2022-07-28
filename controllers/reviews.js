@@ -12,6 +12,7 @@ function update(req, res) {
     const reviewSubdoc = car.reviews.id(req.params.id);
     if (!reviewSubdoc.user.equals(req.user._id)) return res.redirect(`/cars/${car._id}`);
     reviewSubdoc.content = req.body.content;
+    reviewSubdoc.rating = req.body.rating;
     car.save(function(err) {
       res.redirect(`/cars/${car._id}`)
     });
