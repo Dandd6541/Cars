@@ -33,3 +33,7 @@ This is a blog about Toyota's and not only Toyota's, the best Toyota's. This for
 -Once you click on the details for that specific Make and Model, it will direct you -to a page to write a review and rate it as wel (1-5).<br>
 -If by any chance you need to eidt or delete a review, that function is there and ready as well. <br>
 -Enjoy my Toyota Blog. <br>
+
+
+**Next Steps:**
+- Next steps as far as updating this app, is to continue updating the CSS as well as adding functionality as well. For the CSS portion, this app will have videos of the Toyota's as well as some history on some of the best Toyota models. For the functionality portion the newest Make's and Mode's will be listed in the app with more detailed information on that specific car. 
