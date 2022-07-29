@@ -22,15 +22,14 @@
           <td><%= f.model %></td>
           <td><%= f.year %></td>
           <td><%= f.availability %></td>
+          <td><%= f.availability ? 'Yes' : 'Nope' %></td>
           <td><a href="/cars/<%= f._id %>">DETAILS</a></td>
-
           </tr>
-          
-        <td><%= f.availability ? 'Yes' : 'Nope' %></td>
           </tr>
       <% }); %>
     </tbody>
   </table>
+  
 
 <%- include('../partials/footer') %>
 
