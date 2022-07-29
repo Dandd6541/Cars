@@ -52,11 +52,43 @@ nav > a {
 
 nav > a:hover:not(.active) {
   color: rgb(221, 21, 10);
-  background-color: #94a800;
+  background-color: #768500;
 }
 
 nav > a.active {
   color: rgb(142, 20, 20);
   cursor: default;
 }
+
+#new-form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, minmax(auto, 22rem));
+}
+
+#new-form *,
+#add-review-form *,
+#add-performer-form * {
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#new-form input[type="submit"] {
+  grid-column: span 2;
+  width: 10rem;
+  margin-left: auto;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+}
+
+.login img {
+  height: 30px;
+}
+
 
