@@ -26,10 +26,10 @@ This is a two player game consisting of Yellow and Red, with Yellow acting as th
 
 **Getting Started:**
 
-To begin, use your Google account to login.
-Then, click on Add Car which will right away direct you to the page with the top Toyota's between the years of 1995-2023.
-You will have options of several differnt Toyota's to choose from and to check their availabilities as well.
-Once the information is put in such as the Make,Model, Year and Availability, it will then direct you to a page which shows your most recent searches and the information.
-Once you click on the details for that specific Make and Model, it will direct you to a page to write a review and rate it as wel (1-5).
-If by any chance you need to eidt or delete a review, that function is there and ready as well. 
-Enjoy my Toyota Blog. 
+-To begin, use your Google account to login.<br>
+-Then, click on Add Car which will right away direct you to the page with the top Toyota's between the years of 1995-2023.<br>
+-You will have options of several differnt Toyota's to choose from and to check their availabilities as well.<br>
+-Once the information is put in such as the Make,Model, Year and Availability, it will then direct you to a page which shows your most recent searches and the information.<br>
+-Once you click on the details for that specific Make and Model, it will direct you -to a page to write a review and rate it as wel (1-5).<br>
+-If by any chance you need to eidt or delete a review, that function is there and ready as well. <br>
+-Enjoy my Toyota Blog. <br>
