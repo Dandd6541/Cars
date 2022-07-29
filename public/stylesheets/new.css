@@ -1,28 +1,27 @@
-
 body {
-    background-color: red ;
+  background-color: red;
 }
-h2 {
-    margin-top: 5vmin;
-    font-size: 8vmin;
-    -webkit-text-stroke: .28vmin rgb(104, 228, 218) ;
-    text-align: center;
-  }
 
-  #add-review {
-    font-size: 32px;
-    -webkit-text-stroke: .15vmin rgb(18, 18, 17) ;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
-        padding-bottom: 30ch;
-      }
-    
-      .cars {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 25%;
-      }
-    
+h2 {
+  margin-top: 5vmin;
+  font-size: 8vmin;
+  -webkit-text-stroke: .28vmin rgb(104, 228, 218);
+  text-align: center;
+}
+
+#add-review {
+  font-size: 32px;
+  -webkit-text-stroke: .15vmin rgb(18, 18, 17);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding-bottom: 30ch;
+}
+
+.cars {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}

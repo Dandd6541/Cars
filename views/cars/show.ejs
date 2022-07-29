@@ -11,9 +11,9 @@
     <div><%= car.model %></div>
     <div>Release Year: </div>
     <div><%= car.year %></div>
-    <div>Rating: </div>
+    <div>Availability: </div>
     <div><%= car.availability %></div>
-
+  </section>
 <% if (user) { %>
     <form id="add-review-form" method="POST"
       action="/cars/<%= car._id %>/reviews">
