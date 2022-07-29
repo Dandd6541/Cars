@@ -16,6 +16,7 @@ This is a blog about Toyota's and not only Toyota's, the best Toyota's. This for
 
 -CSS <br>
 -Node.js<br>
+-javaScript<br>
 -ejs<br>
 -MongoDB <br>
 -Express.js <br>
