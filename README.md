@@ -3,7 +3,7 @@ Application Title:
 
 Best-Cars
 
-This is a blog about Toyota's and not only Toyota's, the best Toyota's. This forum will give you basic information about the Top Rated Toyota's from the yer 1995-2023. Feel free to browse through the forum and leave a review on your favorite Make,Model and Year. 
+This is a blog about Toyota's and not only Toyota's, the best Toyota's. This forum will give you basic information about the Top Rated Toyota's from the year 1995-2023. Feel free to browse through the forum and leave a review on your favorite Make,Model and Year. 
 
 <img src = "https://i.imgur.com/aEOnCsy.png)">
 <img src = "https://i.imgur.com/6dRtP3l.png)">
