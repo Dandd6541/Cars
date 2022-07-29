@@ -37,4 +37,4 @@ This is a blog about Toyota's and not only Toyota's, the best Toyota's. This for
 
 
 **Next Steps:**
-- Next steps as far as updating this app, is to continue updating the CSS as well as adding functionality as well. For the CSS portion, this app will have videos of the Toyota's as well as some history on some of the best Toyota models. For the functionality portion the newest Make's and Mode's will be listed in the app with more detailed information on that specific car. 
+- Next steps as far as updating this app, is to continue updating the CSS as well as adding functionality to it. For the CSS portion, this app will host videos of the Toyota's as well as some history on some of the best Toyota models. For the functionality portion the newest Make's and Model's will be listed in the app with more detailed information on that specific car. 
